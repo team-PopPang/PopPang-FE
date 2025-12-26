@@ -3,8 +3,8 @@
       slidesPerView: 1,
       spaceBetween: 30,
       autoplay: true,
-      centeredSlides: true,
         loop: true,
+        loopedSlides:3,
       breakpoints: {
           768: {
             slidesPerView: 3,  
@@ -30,6 +30,46 @@
         },
     });
 
+    //인기
+    var swiper = new Swiper(".popular", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+       breakpoints: {
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        },
+    });
+
+    //곧 오는 팝업
+    var swiper = new Swiper(".soon", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+       breakpoints: {
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        },
+    });
 
     //cont 1,2
  const popupData = {
